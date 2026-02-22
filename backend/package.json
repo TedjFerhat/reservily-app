@@ -30,3 +30,9 @@
   "build": "prisma generate",
   "postinstall": "prisma generate"
 }
+{
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "prisma generate"
+  }
+}
