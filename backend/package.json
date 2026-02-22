@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Reservily - Medical Appointment Booking Platform API",
   "main": "src/server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:studio": "prisma studio"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.7.0",
@@ -24,21 +25,5 @@
   "devDependencies": {
     "nodemon": "^3.0.2",
     "prisma": "^5.7.0"
-  }
-}"scripts": {
-  "start": "node server.js",
-  "build": "prisma generate",
-  "postinstall": "prisma generate"
-}
-{
-  "scripts": {
-    "start": "node server.js",
-    "postinstall": "prisma generate"
-  }
-}
-{
-  "scripts": {
-    "start": "node server.js",
-    "postinstall": "prisma generate"
   }
 }
